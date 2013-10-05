@@ -115,7 +115,7 @@
  before it is presented.
  @result A configured test step.
  */
-- (void)presentViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(UIViewController *viewController))configurationBlock;
+- (void)presentViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(id viewController))configurationBlock;
 
 /*!
  @method stepToPresentModalViewControllerWithIdentifier:fromStoryboardWithName:configurationBlock:
@@ -132,6 +132,6 @@
  before it is presented.
  @result A configured test step.
  */
-- (void)presentModalViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(UIViewController *viewController))configurationBlock;
+- (void)presentModalViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(id viewController))configurationBlock;
 
 @end

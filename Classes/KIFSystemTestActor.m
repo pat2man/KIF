@@ -135,7 +135,7 @@ static void *KIFDefaultToolbarClassAssociatedObjectKey = &KIFDefaultToolbarClass
     }];
 }
 
-- (void)presentViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(UIViewController *viewController))configurationBlock
+- (void)presentViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(id viewController))configurationBlock
 {
     [self runBlock:^KIFTestStepResult(NSError *__autoreleasing *error) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
@@ -152,7 +152,7 @@ static void *KIFDefaultToolbarClassAssociatedObjectKey = &KIFDefaultToolbarClass
     }];
 }
 
-- (void)presentModalViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(UIViewController *viewController))configurationBlock
+- (void)presentModalViewControllerWithIdentifier:(NSString *)controllerIdentifier fromStoryboardWithName:(NSString *)storyboardName configurationBlock:(void (^)(id viewController))configurationBlock
 {
     [self runBlock:^KIFTestStepResult(NSError *__autoreleasing *error) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
