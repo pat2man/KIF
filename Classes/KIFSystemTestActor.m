@@ -165,6 +165,7 @@ static void *KIFDefaultToolbarClassAssociatedObjectKey = &KIFDefaultToolbarClass
         UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:self.defaultNavigationBarClass toolbarClass:self.defaultToolbarClass];
         navigationController.viewControllers = @[ viewController ];
         [UIApplication sharedApplication].keyWindow.rootViewController = navigationController;
+        [navigationController presentViewController:storyboardViewController animated:NO completion:nil];
 
         return KIFTestStepResultSuccess;
     }];
